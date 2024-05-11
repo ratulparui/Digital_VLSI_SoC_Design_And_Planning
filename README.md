@@ -1,5 +1,5 @@
 # Digital_VLSI_SoC_Design_And_Planning
-# Sponsored by NASCOM <!-- Red -->
+# Sponsored by NASSCOM <!-- Red -->
 ____________________________________
 # Contents (Day 1 - Day 5)
 # Table of Contents
