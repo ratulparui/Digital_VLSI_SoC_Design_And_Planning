@@ -4,9 +4,9 @@ ____________________________________
 # Contents (Day 1 - Day 5)
 # Table of Contents
 
-- [Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/edit/main/README.md#sky130-day-1---inception-of-open-source-eda-openlane-and-sky130-pdk)
-  - [SKY130_D1_SK1 - How to talk to computers](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/edit/main/README.md#sky130_d1_sk1---how-to-talk-to-computers)
-    - [SKY_L1 - Introduction to QFN-48 Package, chip, pads, core, die and IPs](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/edit/main/README.md#sky_l1---introduction-to-qfn-48-package-chip-pads-core-die-and-ips) 
+- [Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK](#section-1)
+  - [SKY130_D1_SK1 - How to talk to computers](#subsection-11)
+    - [SKY_L1 - Introduction to QFN-48 Package, chip, pads, core, die and IPs](#sub-subsection-111)
     - [SKY_L2 - Introduction to RISC-V](#sub-subsection-112)
     - [SKY_L3 - From Software Applications to Hardware](#sub-subsection-113)
   - [SKY130_D1_SK2 - SoC design and OpenLANE](#subsection-12)
@@ -49,8 +49,11 @@ ____________________________________
   - [Subsection 5.3](#subsection-53)
     - [Sub-subsection 5.3.1](#sub-subsection-531)
 _______________________________________________________________________
+<a name="section-1"></a>
 ## Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK 
+<a name="subsection-11"></a>
 ### SKY130_D1_SK1 - How to talk to computers
+<a name="sub-subsection-111"></a>
 #### SKY_L1 - Introduction to QFN-48 Package, chip, pads, core, die and IPs
 
 - We have taken an example of an audrino board. 
