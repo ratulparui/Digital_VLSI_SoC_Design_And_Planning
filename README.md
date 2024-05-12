@@ -58,7 +58,7 @@ _______________________________________________________________________
    
    ![Day1_Lecture1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/9e222e48-f467-4221-80af-dca80074c2d6)
   
-  - If we zoom in to that IC we can see that it's a processor/SoC, consists of I/O pins, SADRAM chip etc.
+  - If we zoom in to that IC we can see that it's a processor/SoC, consists of I/O pins, SDRAM chip etc.
     
     ![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/97e8dc74-6db1-4a1e-87a1-62db58d38559)
   - Opening up that particular IC in the audrino board, we can see something like this.\
