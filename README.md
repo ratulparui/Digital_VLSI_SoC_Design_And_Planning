@@ -53,6 +53,27 @@ _______________________________________________________________________
 ### KY130_D1_SK1 - How to talk to computers
 #### SKY_L1 - Introduction to QFN-48 Package, chip, pads, core, die and IPs
 
+- We have taken an example of an audrino board. 
+   - We can see the IC inside that audrino board.
+   
+   ![Day1_Lecture1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/9e222e48-f467-4221-80af-dca80074c2d6)
+  
+  - If we zoom in to that IC we can see that it's a processor/SoC, consists of I/O pins, SADRAM chip etc.
+    
+    ![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/97e8dc74-6db1-4a1e-87a1-62db58d38559)
+  - Opening up that particular IC in the audrino board, we can see something like this.\
+    ![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/33fe975d-bf23-4370-95df-35838ed0743e)
+  - The above package can be named as QFN-48, having a size of 7mm x 7mm.
+  - The core sits in the centre of that package and the wires are used for connections between the I/O pads and the core(chip).
+    ![6](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/75ee0826-833f-4868-a495-a72550487c45)
+  - Core, die and pads are shown inside that package.
+    ![9](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/fe3e4da3-c637-4546-a50d-b7a16c4af3a8)
+  -The core consists of Foundry IP's, Macros etc. IP stands for Intelectual property.
+    ![12](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/68b2506b-aecd-447c-9f57-41435e9639cf)
+ 
+    
+- Item 3
+
 
 
 
