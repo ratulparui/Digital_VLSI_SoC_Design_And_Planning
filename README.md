@@ -4,9 +4,9 @@ ____________________________________
 # Contents (Day 1 - Day 5)
 # Table of Contents
 
--  <font color="blue">[Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK](#section-1)</font>
-  - [KY130_D1_SK1 - How to talk to computers](#subsection-11)
-    - [SKY_L1 - Introduction to QFN-48 Package, chip, pads, core, die and IPs](#sub-subsection-111)
+- [Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK](#section-1)
+  - [SKY130_D1_SK1 - How to talk to computers](#subsection-11)
+    - [SKY_L1 - Introduction to QFN-48 Package, chip, pads, core, die and IPs](#sub-subsection-111) 
     - [SKY_L2 - Introduction to RISC-V](#sub-subsection-112)
     - [SKY_L3 - From Software Applications to Hardware](#sub-subsection-113)
   - [SKY130_D1_SK2 - SoC design and OpenLANE](#subsection-12)
@@ -50,7 +50,7 @@ ____________________________________
     - [Sub-subsection 5.3.1](#sub-subsection-531)
 _______________________________________________________________________
 ## Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK
-### KY130_D1_SK1 - How to talk to computers
+### SKY130_D1_SK1 - How to talk to computers
 #### SKY_L1 - Introduction to QFN-48 Package, chip, pads, core, die and IPs
 
 - We have taken an example of an audrino board. 
