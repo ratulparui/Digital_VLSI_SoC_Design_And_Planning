@@ -74,8 +74,18 @@ _______________________________________________________________________
   -The core consists of Foundry IP's, Macros etc. IP stands for Intelectual property.
     ![12](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/68b2506b-aecd-447c-9f57-41435e9639cf)
  
-    
-- Item 3
+    _______________________________________________________________________________________________________________________________
+    <a name="sub-subsection-112"></a>
+    #### SKY_L2 - Introduction to RISC-V
+ - If we have a RISC-V ISA, then a particular C program can be converted into a Layout based on RISC-V ISA.
+   - The C program is first compiled into assembly to machine language. Then the bits are executed inside that particular Layout. 
+   ![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/5c841ee4-3979-487f-962e-32cee73215df)
+   - The RISC_V architechture must be defined using RTL coding. Now RTL to Layout is known as RTL2GDSII Flow.
+  ![Screenshot (5)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/f62d5958-ff25-4bf5-a864-23c8f4c7ee61)
+___________________________________________________________________________________________________________________________________
+
+   
+
 
 
 
