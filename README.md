@@ -68,15 +68,15 @@ _______________________________________________________________________
     ![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/33fe975d-bf23-4370-95df-35838ed0743e)
   - The above package can be named as QFN-48, having a size of 7mm x 7mm.
   - The core sits in the centre of that package and the wires are used for connections between the I/O pads and the core(chip).
-    ![6](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/75ee0826-833f-4868-a495-a72550487c45)
+    ![6](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ab30561a-ee46-415c-b36d-51ed65506ab5)
   - Core, die and pads are shown inside that package.
     ![9](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/fe3e4da3-c637-4546-a50d-b7a16c4af3a8)
   -The core consists of Foundry IP's, Macros etc. IP stands for Intelectual property.
     ![12](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/68b2506b-aecd-447c-9f57-41435e9639cf)
  
-    _______________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________\
     <a name="sub-subsection-112"></a>
-    #### SKY_L2 - Introduction to RISC-V
+#### SKY_L2 - Introduction to RISC-V
  - If we have a RISC-V ISA, then a particular C program can be converted into a Layout based on RISC-V ISA.
    - The C program is first compiled into assembly to machine language. Then the bits are executed inside that particular Layout. 
    ![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/5c841ee4-3979-487f-962e-32cee73215df)
