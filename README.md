@@ -87,8 +87,10 @@ ________________________________________________________________________________
 #### SKY_L3 - From Software Applications to Hardware
 - All the apps we use runs on this hardware. This apps enters into system software. There are various levels of system software.
  - It consists of OS, compiler and the assembler. Depending on the ISA the C program will be converterd to its respective machine language. Then it's fed to the hardware.
-   ![4](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/fd22b991-903e-44d8-b74a-eddc2408ee70)
+   ![Screenshot (15)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a78fcea6-ffe9-4e64-a0c3-54dd5399268a)
+ - Based on the ISA, we need to write the RTL code, then perform synthesis to generate GLN and then perform physical design implementation of that netlist.
 ____________________________________________________________________________________________________________________________________
+
 
 
 
