@@ -90,8 +90,30 @@ ________________________________________________________________________________
    ![Screenshot (15)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a78fcea6-ffe9-4e64-a0c3-54dd5399268a)
  - Based on the ISA, we need to write the RTL code, then perform synthesis to generate GLN and then perform physical design implementation of that netlist.
 ____________________________________________________________________________________________________________________________________
+<a name="subsection-12"></a>
+### SKY130_D1_SK2 - SoC design and OpenLANE
+<a name="sub-subsection-121"></a>
+#### SKY_L3 - SKY_L1 - Introduction to all components of open-source digital asic design
 
 
+____________________________________________________________________________________________________________________________________
+
+<a name="sub-subsection-122"></a>
+#### SKY_L2 - Simplified RTL2GDS flow
+
+
+________________________________________________________________________________________________________________________________________
+
+<a name="sub-subsection-123"></a>
+#### SKY_L3 - Introduction to OpenLANE and Strive chipsets
+
+
+__________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-124"></a>
+#### SKY_L4 - Introduction to OpenLANE detailed ASIC design flow
+
+
+___________________________________________________________________________________________________________________________________________
 
 
    
