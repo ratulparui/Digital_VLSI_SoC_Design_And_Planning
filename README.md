@@ -170,24 +170,24 @@ ________________________________________________________________________________
  - Now, if we put them back-to-back without consdiering the interconnects, we have total area 4 square unit.
 ![Screenshot (51)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/abd96317-4db4-4fbb-87d3-94c6b32af01b)
 
- - We have the utilization factor defined by (Area occpied by the netlist) / (total area)
+ - We have the Utilization Factor defined by (Area occpied by the netlist) / (total area)
 ![Screenshot (53)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/9feca4bc-93bc-4349-b636-727516872f08)
- - For the example taken utilization factor = 1 (100% utilization) and Aspect ratio is also equal to 1.
+ - For the example taken Utilization Factor = 1 (100% utilization) and Aspect ratio is also equal to 1.
 ![Screenshot (54)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/df295632-a5bf-4e18-9bb5-9762ecd03890)
 - When the aspect ratio is not equal to 1, then the height and width are not same, so the chip is no longer square shaped, it's rectangular.
-
- 
-
-
-
-
-
-
 _____________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-212"></a>
 #### SKY_L2 - Concept of pre-placed cells
-
-
+- For the example mentioned below, Utilization Factor = 0.25 (25% utilization) and aspect ratio = 1. So 75% of the area is still available.
+![Screenshot (57)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/42ee65fa-b640-47ac-ad41-e6e1498d3ff0)
+ -Now we need to define the locations of the preplaced cells.
+![Screenshot (59)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/53ccd126-5311-437a-b07a-f33a85dbdf86)
+ - Let's consider a combinational circuit, we can devide the circuit into two parts. We have considered two blocks, block 1 and 2
+![Capture](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/6f6b75a3-0293-4c25-83e6-509689d82638)
+ -We have extened the IO pins for both the blocks and seperated them as two black boxes. They can me reused multiple times, known as IPs.
+![Screenshot (60)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/f12fb797-004a-4421-8597-3089afcae67e)
+ - Now, these cells should be placed before actual placement and routing, that's why these cells are called pre-placed cells. Their locations are fixed.
+![Capture2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/653ade3b-03d6-442d-ac85-346efb5d1115)
 ______________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-213"></a>
 #### SKY_L3 - De-coupling capacitors
