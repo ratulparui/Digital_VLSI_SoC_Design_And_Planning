@@ -20,9 +20,16 @@ ____________________________________
     - [SKY_L3 - Review files after design prep and run synthesis](#sub-subsection-133)
     - [SKY_L4 - OpenLANE Project Git Link Description](#sub-subsection-134)
     - [SKY_L5 - Steps to characterize synthesis results](#sub-subsection-135)
-- [Section 2](#section-2)
-  - [Subsection 2.1](#subsection-21)
-    - [Sub-subsection 2.1.1](#sub-subsection-211)
+- [Sky130 Day 2 - Good floorplan vs bad floorplan and introduction to library cells](#section-2)
+  - [SKY130_D2_SK1 - Chip Floor planning considerations](#subsection-21)
+    - [SKY_L1 - Utilization factor and aspect ratio](#sub-subsection-211)
+    - [SKY_L2 - Concept of pre-placed cells](#sub-subsection-212)
+    - [SKY_L3 - De-coupling capacitors](#sub-subsection-213)
+    - [SKY_L4 - Power planning](#sub-subsection-214)
+    - [SKY_L5 - Pin placement and logical cell placement blockage](#sub-subsection-215)
+    - [SKY_L6 - Steps to run floorplan using OpenLANE](#sub-subsection-216)
+    - [SKY_L7 - Review floorplan files and steps to view floorplan](#sub-subsection-217)
+    - [SKY_L8 - Review floorplan layout in Magic](#sub-subsection-218)
   - [Subsection 2.2](#subsection-22)
     - [Sub-subsection 2.2.1](#sub-subsection-221)
   - [Subsection 2.3](#subsection-23)
@@ -139,6 +146,39 @@ ________________________________________________________________________________
 <a name="sub-subsection-135"></a>
 #### SKY_L5 - Steps to characterize synthesis results
 ___________________________________________________________________________________________________________________________________________
+<a name="section-2"></a>
+## Sky130 Day 2 - Good floorplan vs bad floorplan and introduction to library cells 
+<a name="subsection-21"></a>
+### SKY130_D2_SK1 - Chip Floor planning considerations
+<a name="sub-subsection-211"></a>
+#### SKY_L1 - Utilization factor and aspect ratio
+
+
+_____________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-212"></a>
+#### SKY_L2 - Concept of pre-placed cells
+
+
+______________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-213"></a>
+#### SKY_L3 - De-coupling capacitors
+_______________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-214"></a>
+#### SKY_L4 - Power planning
+_______________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-215"></a>
+#### SKY_L5 - Pin placement and logical cell placement blockage
+________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-216"></a>
+#### SKY_L6 - Steps to run floorplan using OpenLANE
+_______________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-217"></a>
+#### SKY_L7 - Review floorplan files and steps to view floorplan
+_______________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-218"></a>
+#### SKY_L8 - Review floorplan layout in Magic
+_______________________________________________________________________________________________________________________________________________
+
 
 
 
