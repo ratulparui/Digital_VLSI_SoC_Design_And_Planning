@@ -165,13 +165,18 @@ ________________________________________________________________________________
  - So, we are dependant on the width and height of the gates that are inside the netlist. If we give them proper dimensions, we have,
 ![Screenshot (50)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ece42d19-af22-4913-8899-7a87ca1c9fd3)
 
- -Let us consider the standard cells having unit length and width making 1 square unit area. Similarly the Flip-Flops having 1 square unit area.
+ - Let us consider the standard cells having unit length and width making 1 square unit area. Similarly the Flip-Flops having 1 square unit area.
  
- -Now, if we put them back-to-back without consdiering the interconnects, then we have total area 4 square unit.
+ - Now, if we put them back-to-back without consdiering the interconnects, we have total area 4 square unit.
 ![Screenshot (51)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/abd96317-4db4-4fbb-87d3-94c6b32af01b)
 
- -We have the utilization factor defined by (Area occpied by the netlist) / (total area)
- ![Screenshot (52)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/7a21f30c-8f5c-40c4-a601-0ae1bc9fd86b)
+ - We have the utilization factor defined by (Area occpied by the netlist) / (total area)
+![Screenshot (53)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/9feca4bc-93bc-4349-b636-727516872f08)
+ - For the example taken utilization factor = 1 (100% utilization) and Aspect ratio is also equal to 1.
+![Screenshot (54)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/df295632-a5bf-4e18-9bb5-9762ecd03890)
+- When the aspect ratio is not equal to 1, then the height and width are not same, so the chip is no longer square shaped, it's rectangular.
+
+ 
 
 
 
