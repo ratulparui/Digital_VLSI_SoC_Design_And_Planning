@@ -201,13 +201,26 @@ ________________________________________________________________________________
 - To solve the problem, we need to use de-coupling capacitor, parallel to the circuit. Whenever, there is a switching operation happening, de-coupling capacitor will supply the current to the circuit. When there is no switching operation happening, de-coupling capacitor, will get charged. It simply de-couples the circuit from the source.
 ![Screenshot (67)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/0948bcaf-503d-4a71-8ff1-4204cffc6c99)
 - So, we place de-coupling capacitors, beside the pre-placed cells, to avoid crosstalk.
-![Screenshot (68)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/63afb81b-e2a0-487a-a509-d3aa939208d9)
-
-
- 
+![Screenshot (69)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/d72cfa2d-7513-41fa-b1cd-636beb526d94)
 _______________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-214"></a>
 #### SKY_L4 - Power planning
+- Considering the circuit parallel to de-coupling capacitor as a black box or macro, let, this macro is repeated multiple times. Now, we have to make sure that driver to load maintains the same logic level.
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/8b601b15-5680-44eb-832d-ade44ba919f5)
+- Now, applying power supply, to these macros, we need to make sure that the line connecting driver and load must retain the same power.
+![Screenshot (70)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/aed19462-ff2f-4405-a00a-f1207e876751)
+- As the distance between the power supply and the interconnecting wire is more, there can be significant voltage drop.
+- Now, the red line is a 16-bit bus. When each line may be at 0 or 1, depands on the charge on the capacitor of that particular line. When this bus is connected to an inverter, output will be inverted of that input applied. All the capacitors that were charged to 1 will be simultaneously discharged to 0 and vise-versa.
+![Screenshot (72)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/13c15890-5a63-41a4-b57a-78e3b169e03a)
+- When all the capacitors discharges simultaneously, ground bounce occurs.If the ground bounce exceeds noise margin level, it can enter into undefined state.
+![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/06024b6f-7830-4831-b66d-c755df72e844)
+-  When all the capacitors charges simultaneously, voltage droop occurs. To reslove this problem there should be power supply in each line.
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/cc90e8d9-1ddf-4141-be66-1bcf0df0b71b)
+- Instead power coming from a single source, if power comes from multiple supply (Vdd and Vss) lines, each block now can access power from these lines.
+![4](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/bcc3eeee-efd7-4cee-b6f1-a1d2d2ff0efd)
+- Multiple Vdd and Vss lines are used to give access power to each blocks.
+![Screenshot (74)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/4705afc9-520e-40a6-b9a0-99ebf4a795da)
+
 _______________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-215"></a>
 #### SKY_L5 - Pin placement and logical cell placement blockage
