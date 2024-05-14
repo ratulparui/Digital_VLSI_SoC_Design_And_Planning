@@ -30,8 +30,12 @@ ____________________________________
     - [SKY_L6 - Steps to run floorplan using OpenLANE](#sub-subsection-216)
     - [SKY_L7 - Review floorplan files and steps to view floorplan](#sub-subsection-217)
     - [SKY_L8 - Review floorplan layout in Magic](#sub-subsection-218)
-  - [Subsection 2.2](#subsection-22)
-    - [Sub-subsection 2.2.1](#sub-subsection-221)
+  - [SKY130_D2_SK2 - Library Binding and Placement](#subsection-22)
+    - [SKY_L1 - Netlist binding and initial place design](#sub-subsection-221)
+    - [SKY_L2 - Optimize placement using estimated wire-length and capacitance](#sub-subsection-222)
+    - [SKY_L3 - Final placement optimization](#sub-subsection-223)
+    - [SKY_L4 - Need for libraries and characterization](#sub-subsection-224)
+    - [SKY_L5 - Congestion aware placement using RePlAce](#sub-subsection-225)
   - [Subsection 2.3](#subsection-23)
     - [Sub-subsection 2.3.1](#sub-subsection-231)
 - [Section 3](#section-3)
@@ -178,9 +182,32 @@ ________________________________________________________________________________
 <a name="sub-subsection-218"></a>
 #### SKY_L8 - Review floorplan layout in Magic
 _______________________________________________________________________________________________________________________________________________
+<a name="subsection-22"></a>
+### SKY130_D2_SK2 - Library Binding and Placement
+<a name="sub-subsection-221"></a>
+#### SKY_L1 - Netlist binding and initial place design
 
 
+________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-222"></a>
+#### SKY_L2 - Optimize placement using estimated wire-length and capacitance
 
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-223"></a>
+#### SKY_L3 - Final placement optimization
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-224"></a>
+#### SKY_L4 - Need for libraries and characterization
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-225"></a>
+#### SKY_L5 - Congestion aware placement using RePlAce
+
+__________________________________________________________________________________________________________________________________________________
 
    
 
