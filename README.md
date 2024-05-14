@@ -157,7 +157,9 @@ ________________________________________________________________________________
 <a name="sub-subsection-211"></a>
 #### SKY_L1 - Utilization factor and aspect ratio
 -The first step of the physical design is to define the width and the height of the core and the die.
-![Screenshot (48)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/4be259f6-1e62-4360-aef2-d2d29af39971)
+![Screenshot (48)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/95a6b297-fccb-40e4-9b53-05e947996a48)
+
+
 - Let us consider a netlist consists of a lanunch and a capture Flip-Flop and some combinational logic circuits in between them.
 ![Screenshot (49)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/4b93fc36-2b6b-45b3-9c50-97ac0cf30f0f)
  - So, we are dependant on the width and height of the gates that are inside the netlist. If we give them proper dimensions, we have,
