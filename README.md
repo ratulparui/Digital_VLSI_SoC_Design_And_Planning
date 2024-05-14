@@ -156,6 +156,24 @@ ________________________________________________________________________________
 ### SKY130_D2_SK1 - Chip Floor planning considerations
 <a name="sub-subsection-211"></a>
 #### SKY_L1 - Utilization factor and aspect ratio
+-The first step of the physical design is to define the width and the height of the core and the die.
+![Screenshot (48)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/4be259f6-1e62-4360-aef2-d2d29af39971)
+- Let us consider a netlist consists of a lanunch and a capture Flip-Flop and some combinational logic circuits in between them.
+![Screenshot (49)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/4b93fc36-2b6b-45b3-9c50-97ac0cf30f0f)
+ - So, we are dependant on the width and height of the gates that are inside the netlist. If we give them proper dimensions, we have,
+![Screenshot (50)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ece42d19-af22-4913-8899-7a87ca1c9fd3)
+
+ -Let us consider the standard cells having unit length and width making 1 square unit area. Similarly the Flip-Flops having 1 square unit area.
+ 
+ -Now, if we put them back-to-back without consdiering the interconnects, then we have total area 4 square unit.
+![Screenshot (51)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/abd96317-4db4-4fbb-87d3-94c6b32af01b)
+
+ -We have the utilization factor defined by (Area occpied by the netlist) / (total area)
+ ![Screenshot (52)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/7a21f30c-8f5c-40c4-a601-0ae1bc9fd86b)
+
+
+
+
 
 
 _____________________________________________________________________________________________________________________________________________
