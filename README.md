@@ -193,10 +193,17 @@ ________________________________________________________________________________
 #### SKY_L3 - De-coupling capacitors
 - We have 3 cells represented as, block A, B and C, based on the requirement, they are placed towards the input side of the core.
 ![Screenshot (61)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/8f51479c-700b-41b3-b03f-a878d9b24ca8)
-- For the below circuit V_dd be 1V and V_dd' be 0.7 V. This drop occurs due to resistance and inductance present in the path. Now, a charging happening as shown, can't go beyond 0.7 V. Now that 0.7 V to be detected as logic 1, should be within the noise margin range.
+- For the below circuit Vdd be 1V and Vdd' be 0.7 V. This drop occurs due to resistance and inductance present in the path. Now, during a switching event, let a charging is happening as shown, max voltage can't go beyond 0.7 V. Now that 0.7 V to be detected as logic 1, should be within the noise margin range.
 ![Screenshot (65)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/78432b58-a7d1-438c-bb59-941de17c935d)
 - The region between Vol and Vil is treated as logic 0, the region between Vih and Voh is treated as logic 1, and the region between Vil and Vih is known as undefined region.
-![Screenshot (66)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/aa739628-686c-47f8-ac77-6a685f13df0b)
+![Screenshot (66)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/e5a84084-dd12-4f23-8260-313b8d44bab1)
+- If Vdd' becomes 0.5V, that may lie in the undefined region, which can lead to problem.
+- To solve the problem, we need to use de-coupling capacitor, parallel to the circuit. Whenever, there is a switching operation happening, de-coupling capacitor will supply the current to the circuit. When there is no switching operation happening, de-coupling capacitor, will get charged. It simply de-couples the circuit from the source.
+![Screenshot (67)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/0948bcaf-503d-4a71-8ff1-4204cffc6c99)
+- So, we place de-coupling capacitors, beside the pre-placed cells, to avoid crosstalk.
+![Screenshot (68)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/63afb81b-e2a0-487a-a509-d3aa939208d9)
+
+
  
 _______________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-214"></a>
