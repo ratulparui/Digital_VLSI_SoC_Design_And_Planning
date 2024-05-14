@@ -184,13 +184,20 @@ ________________________________________________________________________________
 ![Screenshot (59)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/53ccd126-5311-437a-b07a-f33a85dbdf86)
  - Let's consider a combinational circuit, we can devide the circuit into two parts. We have considered two blocks, block 1 and 2
 ![Capture](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/6f6b75a3-0293-4c25-83e6-509689d82638)
- -We have extened the IO pins for both the blocks and seperated them as two black boxes. They can me reused multiple times, known as IPs.
+ - We have extened the IO pins for both the blocks and seperated them as two black boxes. They can me reused multiple times, known as IPs.
 ![Screenshot (60)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/f12fb797-004a-4421-8597-3089afcae67e)
  - Now, these cells should be placed before actual placement and routing, that's why these cells are called pre-placed cells. Their locations are fixed.
 ![Capture2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/653ade3b-03d6-442d-ac85-346efb5d1115)
 ______________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-213"></a>
 #### SKY_L3 - De-coupling capacitors
+- We have 3 cells represented as, block A, B and C, based on the requirement, they are placed towards the input side of the core.
+![Screenshot (61)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/8f51479c-700b-41b3-b03f-a878d9b24ca8)
+- For the below circuit V_dd be 1V and V_dd' be 0.7 V. This drop occurs due to resistance and inductance present in the path. Now, a charging happening as shown, can't go beyond 0.7 V. Now that 0.7 V to be detected as logic 1, should be within the noise margin range.
+![Screenshot (65)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/78432b58-a7d1-438c-bb59-941de17c935d)
+- The region between Vol and Vil is treated as logic 0, the region between Vih and Voh is treated as logic 1, and the region between Vil and Vih is known as undefined region.
+![Screenshot (66)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/aa739628-686c-47f8-ac77-6a685f13df0b)
+ 
 _______________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-214"></a>
 #### SKY_L4 - Power planning
