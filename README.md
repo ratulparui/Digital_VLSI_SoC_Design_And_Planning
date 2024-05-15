@@ -227,6 +227,12 @@ ________________________________________________________________________________
 ________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-216"></a>
 #### SKY_L6 - Steps to run floorplan using OpenLANE
+- In the floorplan step we set the aspect ratio, the utilization factor, we place the input, output cells and the PDN.
+- Now, in OpenLANE there is a readme file in the coniguration directory describing all the switches regarding each steps.
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/0af1e8bd-8e22-4046-841c-a40865770e27)
+- Opening the readme file shows the switches. For example, for floorplan there is a switch named as FP_CORE_UTIL, which sets the default core utilization factor to 0.5
+![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a8db3dba-e871-4a3b-9570-97c6a5972e96)
+
 _______________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-217"></a>
 #### SKY_L7 - Review floorplan files and steps to view floorplan
