@@ -174,10 +174,21 @@ ________________________________________________________________________________
 ### SKY130_D1_SK3 - Get familiar to open-source EDA tools
 <a name="sub-subsection-131"></a>
 #### SKY_L1 - OpenLANE Directory structure in detail
+Some basic linux commands are listed below
 
+      pwd : Stands for the present working directory and the command shows it's path.
+      cd : Stands for change directory.
+      ls -ltr: It's used for listing, and the switch ltr shows all the sub-directories and files present in the current directory.
+      mkdir : Used for making a new directory.
+      rm : Used to remove/delete the files.
+      help : Helps to know more about any command.
+      clear : Used to clear the terminal.
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/88522227-70d5-4211-b8b6-b6ba9f4a99ce)
 
-
-____________________________________________________________________________________________________________________________________________
+- Inside the PDK libs.ref is specific to the technology and libs.tech is specific to the tool. Tech file contains lef, lib etc. files.
+.lib file contains all the timing files. tt for typical-typical, ss for slow slow and ff for fast fast.
+![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/92f56738-f2a7-4931-8fa8-58795ad7a4e4)
+ ____________________________________________________________________________________________________________________________________________
 
 <a name="sub-subsection-132"></a>
 #### SKY_L2 - Design Preparation Step
