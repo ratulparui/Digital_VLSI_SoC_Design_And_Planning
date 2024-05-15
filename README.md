@@ -1,8 +1,8 @@
 # Digital_VLSI_SoC_Design_And_Planning
-# Sponsored by NASSCOM <!-- Red -->
+# Sponsored by VSD and NASSCOM 
 ____________________________________
 # Contents (Day 1 - Day 5)
-# Table of Contents
+``` Table of Contents ```
 
 - [Sky130 Day 1 - Inception of open-source EDA, OpenLANE and Sky130 PDK](#section-1)
   - [SKY130_D1_SK1 - How to talk to computers](#subsection-11)
@@ -98,15 +98,34 @@ ________________________________________________________________________________
 #### SKY_L3 - From Software Applications to Hardware
 - All the apps we use runs on this hardware. This apps enters into system software. There are various levels of system software.
  - It consists of OS, compiler and the assembler. Depending on the ISA the C program will be converterd to its respective machine language. Then it's fed to the hardware.
-   ![Screenshot (15)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a78fcea6-ffe9-4e64-a0c3-54dd5399268a)
+![Screenshot (15)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a78fcea6-ffe9-4e64-a0c3-54dd5399268a)
  - Based on the ISA, we need to write the RTL code, then perform synthesis to generate GLN and then perform physical design implementation of that netlist.
 ____________________________________________________________________________________________________________________________________
 <a name="subsection-12"></a>
 ### SKY130_D1_SK2 - SoC design and OpenLANE
 <a name="sub-subsection-121"></a>
 #### SKY_L3 - SKY_L1 - Introduction to all components of open-source digital asic design
+- For Digital ASIC Design we require the following input files.
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/5782eed7-afc7-411e-9f14-45ffd6780c8f)
+- We can design open-source ASIC using open source RTL, EDA tools and PDK Data. RTL deigns provied mostly by github. The EDA tools are qflow, OpenROAD, OpenLANE.
+ And open-source PDK provided by skywater.
 
+![Screenshot (19)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/25303706-2f6a-4b01-99db-11048667d00b)
+- PDK is process design kit provided by the foundary. There are two types of company
+   - Design based or FABLESS.
+   - Fabrication only
+- Though companies like INTEL, SAMSUNG have both.
+- PDK includes the
+  - Process Design Rules : DRC , LVS , PEX
+  - Device Models
+  - Digital Standard Cell Libraries
+  - I/O Libraries etc.
+-In JUNE, 2020 GOOGLE with SKYWATER lauched *FOSS 130nm Production PDK* Opensource.
 
+![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/6c5f4136-1b0b-46ba-a5ed-77f2d3ca1ffe)
+- Now, current process technology node is 5nm, is 130nm still significant? 130nm has currently 6% market share, equivalent to *4.5 Billion Annual revenue*
+
+![7](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/edc1bd6b-ed6f-4e14-a341-ea7f4df0e784)
 ____________________________________________________________________________________________________________________________________
 
 <a name="sub-subsection-122"></a>
