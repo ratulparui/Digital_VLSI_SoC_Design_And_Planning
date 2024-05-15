@@ -232,6 +232,16 @@ ________________________________________________________________________________
 ![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/0af1e8bd-8e22-4046-841c-a40865770e27)
 - Opening the readme file shows the switches. For example, for floorplan there is a switch named as FP_CORE_UTIL, which sets the default core utilization factor to 0.5
 ![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a8db3dba-e871-4a3b-9570-97c6a5972e96)
+- Now, if we open floorplan.tcl,we can see the default value set by the tool. For example, utilization factor default value is 50 (percent). Similarly, 'FP_IO_MODE' switch determines where the pins will be equidistant or not.
+![7](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/3e90d237-f015-4a8f-ad26-3fea61628a01)
+- Now if we go back to design folder and look for config.tcl file.
+![8](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/b199cd28-fe02-4127-9d47-d43d1a01ae4b)
+ - We can see that it has the path of the netlist file and the sdc file. We have edited it to make utiliization factor = 65,No of Vertial IO pins = 4 and No of  Horizontal IO pins = 3.
+![11](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/cea6755a-a192-4c8d-8b1e-e559ca0d0e0a)
+- Now we can run the command run_floorplan. After sucessful run it will show message PDN generation was sucessful.
+![12](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/4fcfa465-707b-4a1a-9cd3-61eb8d995ce0)
+
+
 
 _______________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-217"></a>
