@@ -246,6 +246,8 @@ ________________________________________________________________________________
 _______________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-217"></a>
 #### SKY_L7 - Review floorplan files and steps to view floorplan
+- After running floorplan, if we open config.tcl file, that exists inside runs folder, will show core utilization different than what we defined in config.tcl file in configuration directory.
+- 
 _______________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-218"></a>
 #### SKY_L8 - Review floorplan layout in Magic
