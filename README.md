@@ -130,9 +130,35 @@ ________________________________________________________________________________
 
 <a name="sub-subsection-122"></a>
 #### SKY_L2 - Simplified RTL2GDS flow
+- Simplified ASIC design flow starts with RTL and ends with GDSII file. The steps are shown below:
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/c82a7bcb-b9e1-447c-85ff-6462dedaacc7)
+- The flow starts with
+     - **(1) Synthesis**: Converts RTL to GLN out of components from the standard cell libraries.
+![Screenshot (20)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/2a430669-89d7-4c02-ab89-9cecb315db86)
+     - **(2) Floor Planning & Power Planning**: Here we need to plan silicon area and distribute the power to the whole circuit. In macro floor planning, we define the dimensions, pin locations, rows definition.
+       In power planning, the power network is constructed. The chip is powered by multiple VDD and GND. All components are connected to power supply horizontaly and vertically by metal strips.
 
+       ![Screenshot (24)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/643cd19a-40e6-4a6c-9df8-1c749c5f41c3)
+       
+         ![Screenshot (25)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/9e588aa1-0423-4278-af77-6fc9441a3a32)
 
-________________________________________________________________________________________________________________________________________
+    - **(3) Placement**: We place the gate level netlist on the floor planning rows. It's done in 2 steps,
+       - **Global placement**: Tries to find optimum positions of each cells, which are not always legal.
+       
+       - **Detailed placement**: In detailed placement the positions of the cells are manually altered to make them legal.
+       ![Screenshot (27)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/9a42dfb9-c6cb-49ab-8bfd-fb2a77a81675)
+    - **(4) Clock Tree Synthesis**: Before routing the signals, we need to route the clock. Here we need to create a clock distribution network(CDN).
+      ![Screenshot (28)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/c7236811-5d95-40ea-8d9a-ad21642a5a3c)
+    -  **(5) Routing**:  After routing the clock, we need to route the signals. We need horizontal and vertical wires to implement the nets to connect the cells.
+      The sky130 PDK defines the 6 routing leyers.The routing grids are huge. So, devide and conquer approach is used for routing. The routing is of 2 types:
+       -  **Global Routing**: Generates the routing guides.
+       -  **Detailed Routing**: Uses the routing guides to implement the actual wiring.
+       ![Screenshot (29)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ed83df2f-96bd-4d63-b24e-d15bf4547a4a)
+
+    - **(5) Sign Off**: Once the routing is done, we can construct the final layout. This final layout will go under verification.
+       - **Physical Verification Checks**: Design Rule Check (DRC), Layout Vs Schematic (LVS) checks.
+       - **Timing Checks** : Static Timing Analysis (STA) is performed to check if there any timing violations exist.
+______________________________________________________________________________________________________________________________________________
 
 <a name="sub-subsection-123"></a>
 #### SKY_L3 - Introduction to OpenLANE and Strive chipsets
