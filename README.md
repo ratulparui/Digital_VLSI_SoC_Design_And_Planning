@@ -315,11 +315,24 @@ ________________________________________________________________________________
 _______________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-217"></a>
 #### SKY_L7 - Review floorplan files and steps to view floorplan
-- After running floorplan, if we open config.tcl file, that exists inside runs folder, will show core utilization different than what we defined in config.tcl file in configuration directory.
-- 
+- After running floorplan, if we open config.tcl file, that exists inside runs folder, will show core utilization factor.
+- If we try to run the magic tool in order to see the def file, we can run the following command
+
+       magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+We can see magic is opened.
+![layout](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/abce0af9-62ee-4fdd-8cdf-56ce56abfb4a)
+
 _______________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-218"></a>
 #### SKY_L8 - Review floorplan layout in Magic
+- In magic, to select entire layout we press ```q+s``` and ```v``` for fit. By right and left click of mouse, we can select a partcular part of the layout. Pressing ```s``` will highlight that area.
+   ![a](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/fa04429d-fb90-49b6-95ee-49ad3b7504e1)
+- Now, after selecting a particular area, we can go to tkcon window and type ```what``` to know more about the selected area.
+   ![b](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/7f88e53a-f1cd-474e-8706-888f0084904e)
+- We can see the tapcells are used to prevent latch-up issues. Standard-cells are kept at lower left corners.
+   ![c](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/4908a1af-1575-4f9b-b68b-0ee3e4b76396)
+
+
 _______________________________________________________________________________________________________________________________________________
 <a name="subsection-22"></a>
 ### SKY130_D2_SK2 - Library Binding and Placement
