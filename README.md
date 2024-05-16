@@ -192,16 +192,26 @@ Some basic linux commands are listed below
 
 <a name="sub-subsection-132"></a>
 #### SKY_L2 - Design Preparation Step
-
-
-
+- We open docker by typying ```docker``` in the terminal then search for flow.tcl file, then run it under interactive mode, after that openlane is launched.
+![allnew1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/b6fbc1ac-1453-48d8-9fc1-6689c9f25d5a)
+- Then we go for the preparation step. Here merging of LEFS happens.
+![allnew4](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/29c98068-e773-45f9-8fd1-26290263d367)
 
 ___________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-133"></a>
 #### SKY_L3 - Review files after design prep and run synthesis
+- If we go to ```openlane/designs/picorv32a/runs/16-05_13_58 (today's date) ``` we can see results, reports, logs etc directories are created. If we go inside results directory, results regarding all steps are created.
+![allnew3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/69d6e1d4-b09d-4c04-909f-a3ef699d2666)
+- Once all preparations for synthesis is complete, we run ```run_synthesis``` command to perform synthesis. Upon sucess *Synthesis was sucessful* message is shown.
+![allnew1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/2d6fc7a5-7f6c-4c77-af60-ff65e13eae49)
+
 ___________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-134"></a>
 #### SKY_L4 - OpenLANE Project Git Link Description
+- We can checkout OpenLANE github page, [Openlane](https://github.com/efabless/openlane)
+![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/2c5f640d-9134-4954-8250-a7ae11bf0599)
+- The entire OpenLANE flow is shown below,
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/c4cb0733-bad7-45bb-84b3-623fae14c13e)
 ___________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-135"></a>
 #### SKY_L5 - Steps to characterize synthesis results
