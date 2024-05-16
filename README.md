@@ -215,6 +215,9 @@ ________________________________________________________________________________
 ___________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-135"></a>
 #### SKY_L5 - Steps to characterize synthesis results
+- Once synthesis is done, We calculate the flop-ratiodefined by (No of D F-Fs) / (Total No of cells). It iss calculated to be 1613 / 14323 or 0.114 or 11.4 %
+  ![a](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/1cb60ae8-4e8e-428a-ba48-4cca77b94eb4)
+- Opening the reports under synthesis shows the samiliar data. 
 ___________________________________________________________________________________________________________________________________________
 <a name="section-2"></a>
 ## Sky130 Day 2 - Good floorplan vs bad floorplan and introduction to library cells 
@@ -268,7 +271,7 @@ ________________________________________________________________________________
 ![Screenshot (67)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/0948bcaf-503d-4a71-8ff1-4204cffc6c99)
 - So, we place de-coupling capacitors, beside the pre-placed cells, to avoid crosstalk.
 ![Screenshot (69)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/d72cfa2d-7513-41fa-b1cd-636beb526d94)
-_______________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-214"></a>
 #### SKY_L4 - Power planning
 - Considering the circuit parallel to de-coupling capacitor as a black box or macro, let, this macro is repeated multiple times. Now, we have to make sure that driver to load maintains the same logic level.
