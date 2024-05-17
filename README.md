@@ -416,10 +416,12 @@ ________________________________________________________________________________
 <a name="sub-subsection-242"></a>
 #### SKY_L2 - Propagation delay and transition time
 ___________________________________________________________________________________________________________________________________________________
+<a name="section-3"></a>
+## Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization 
 <a name="subsection-31"></a>
-### Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization
+### SKY130_D3_SK1 - Labs for CMOS inverter ngspice simulations
 <a name="sub-subsection-311"></a>
-#### SKY_L1 - Timing threshold definitions
+#### SKY_L0 - IO placer revision
 
 ____________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-312"></a>
