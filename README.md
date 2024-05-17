@@ -426,6 +426,8 @@ ________________________________________________________________________________
 ### SKY130_D3_SK1 - Labs for CMOS inverter ngspice simulations
 <a name="sub-subsection-311"></a>
 #### SKY_L0 - IO placer revision
+- Till now, all the pins are placed equidisa\tantly, if we want to change that, we need to change ```FP_IO_MODE``` value from 1 to 2. We can see pins are no longer equidistant
+![a](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/1c82d751-ceb7-4a72-8173-f7404a4bdc8e)
 
 ____________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-312"></a>
