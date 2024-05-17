@@ -44,12 +44,14 @@ ____________________________________
   - [SKY130_D2_SK4 - General timing characterization parameters](#subsection-24)
     - [SKY_L1 - Timing threshold definitions](#sub-subsection-241)
     - [SKY_L2 - Propagation delay and transition time](#sub-subsection-242)
-  - [Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization](#subsection-31)
-    - [SKY130_D3_SK1 - Labs for CMOS inverter ngspice simulations](#sub-subsection-311)
-    - [SKY_L0 - IO placer revision](#sub-subsection-312)
-    - [SKY_L3 - Switching Threshold Vm](#sub-subsection-313)
-    - [SKY_L4 - Static and dynamic simulation of CMOS inverter](#sub-subsection-314)
-    - [SKY_L5 - Lab steps to git clone vsdstdcelldesign](#sub-subsection-315)
+- [Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization](#section-3)
+  - [SKY130_D3_SK1 - Labs for CMOS inverter ngspice simulations](#subsection-31)
+    - [SKY_L0 - IO placer revision](#sub-subsection-311)
+    - [SKY_L1 - SPICE deck creation for CMOS inverter](#sub-subsection-312)
+    - [SKY_L2 - SPICE simulation lab for CMOS inverter](#sub-subsection-313)
+    - [SKY_L3 - Switching Threshold Vm](#sub-subsection-314)
+    - [SKY_L4 - Static and dynamic simulation of CMOS inverter](#sub-subsection-315)
+    - [SKY_L5 - Lab steps to git clone vsdstdcelldesign](#sub-subsection-316)
   - [SKY130_D3_SK2 - Inception of Layout And CMOS fabrication process](#subsection-32)
     - [SKY_L1 - Create Active regions](#sub-subsection-321)
     - [SKY_L2 - Formation of N-well and P-well](#sub-subsection-322)
@@ -414,8 +416,24 @@ ________________________________________________________________________________
 <a name="sub-subsection-242"></a>
 #### SKY_L2 - Propagation delay and transition time
 ___________________________________________________________________________________________________________________________________________________
+<a name="subsection-31"></a>
+### Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization
+<a name="sub-subsection-311"></a>
+#### SKY_L1 - Timing threshold definitions
 
-
+____________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-312"></a>
+#### SKY_L1 - Timing threshold definitions
+____________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-313"></a>
+#### SKY_L1 - Timing threshold definitions
+____________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-314"></a>
+#### SKY_L1 - Timing threshold definitions
+___________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-315"></a>
+#### SKY_L1 - Timing threshold definitions
+___________________________________________________________________________________________________________________________________________________
 
 
 
