@@ -426,12 +426,20 @@ ________________________________________________________________________________
 ### SKY130_D3_SK1 - Labs for CMOS inverter ngspice simulations
 <a name="sub-subsection-311"></a>
 #### SKY_L0 - IO placer revision
-- Till now, all the pins are placed equidisa\tantly, if we want to change that, we need to change ```FP_IO_MODE``` value from 1 to 2. We can see pins are no longer equidistant
+- Till now, all the pins are placed equidistantly, if we want to change that, we need to change ```FP_IO_MODE``` value from 1 to 2. We can see pins are no longer equidistant
 ![a](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/1c82d751-ceb7-4a72-8173-f7404a4bdc8e)
 
 ____________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-312"></a>
 #### SKY_L1 - SPICE deck creation for CMOS inverter
+- To define a spice deck we start with Component connectivity where we define the connectivity of the substrate pin.
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/4310e2a0-7128-4c63-9ef0-f3a6a87ac5f0)
+- Then we  define the Component values  where we define the aspect ratios of the MOS and give power supply values.
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a8a0fcee-b855-4b5e-a173-0021818bcc41)
+- After that we need to identify the nodes. We give name to those nodes.
+![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/aa3bc978-ff23-4802-a129-9d72cd95bc18)
+- Now we are ready to define the spice deck for our inverter.
+![6](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a7772fbb-c72d-4533-a249-2bb899bdc759)
 ____________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-313"></a>
 #### SKY_L2 - SPICE simulation lab for CMOS inverter
