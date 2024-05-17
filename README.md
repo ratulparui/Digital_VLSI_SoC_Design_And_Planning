@@ -50,7 +50,7 @@ ____________________________________
     - [SKY_L3 - Switching Threshold Vm](#sub-subsection-313)
     - [SKY_L4 - Static and dynamic simulation of CMOS inverter](#sub-subsection-314)
     - [SKY_L5 - Lab steps to git clone vsdstdcelldesign](#sub-subsection-315)
-  - [SKY130_D3_SK2 - Inception of Layout ÃÂ CMOS fabrication process](#subsection-32)
+  - [SKY130_D3_SK2 - Inception of Layout And CMOS fabrication process](#subsection-32)
     - [SKY_L1 - Create Active regions](#sub-subsection-321)
     - [SKY_L2 - Formation of N-well and P-well](#sub-subsection-322)
     - [SKY_L3 - Formation of gate terminal](#sub-subsection-323)
