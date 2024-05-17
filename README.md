@@ -438,14 +438,18 @@ ________________________________________________________________________________
 ![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a8a0fcee-b855-4b5e-a173-0021818bcc41)
 - After that we need to identify the nodes. We give name to those nodes.
 ![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/aa3bc978-ff23-4802-a129-9d72cd95bc18)
-- Now we are ready to define the spice deck for our inverter.
+- Now we are ready to define the spice deck for our inverter. For MOS should be connected as D G S Sub for a MOSFET.
 ![6](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a7772fbb-c72d-4533-a249-2bb899bdc759)
 ____________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-313"></a>
 #### SKY_L2 - SPICE simulation lab for CMOS inverter
+- Now, we have to define connectivities for each of the components. We are sweeping the gate input voltage from 0 to 2.5 at an interval of 0.05. We need to find the output voltafe, while we sweep the input voltage.Finally, we describe the model file.
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/d28b341b-47a3-41a6-beaa-2e5098dc8ac8)
+
 ____________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-314"></a>
 #### SKY_L3 - Switching Threshold Vm
+- 
 ___________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-315"></a>
 #### SKY_L4 - Static and dynamic simulation of CMOS inverter
