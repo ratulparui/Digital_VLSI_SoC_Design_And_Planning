@@ -20,6 +20,8 @@ ____________________________________
     - [SKY_L3 - Review files after design prep and run synthesis](#sub-subsection-133)
     - [SKY_L4 - OpenLANE Project Git Link Description](#sub-subsection-134)
     - [SKY_L5 - Steps to characterize synthesis results](#sub-subsection-135)
+
+    
 - [Sky130 Day 2 - Good floorplan vs bad floorplan and introduction to library cells](#section-2)
   - [SKY130_D2_SK1 - Chip Floor planning considerations](#subsection-21)
     - [SKY_L1 - Utilization factor and aspect ratio](#sub-subsection-211)
@@ -44,6 +46,8 @@ ____________________________________
   - [SKY130_D2_SK4 - General timing characterization parameters](#subsection-24)
     - [SKY_L1 - Timing threshold definitions](#sub-subsection-241)
     - [SKY_L2 - Propagation delay and transition time](#sub-subsection-242)
+   
+    
 - [Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization](#section-3)
   - [SKY130_D3_SK1 - Labs for CMOS inverter ngspice simulations](#subsection-31)
     - [SKY_L0 - IO placer revision](#sub-subsection-311)
