@@ -443,8 +443,21 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-313"></a>
 #### SKY_L2 - SPICE simulation lab for CMOS inverter
-- Now, we have to define connectivities for each of the components. We are sweeping the gate input voltage from 0 to 2.5 at an interval of 0.05. We need to find the output voltafe, while we sweep the input voltage.Finally, we describe the model file.
+- Now, we have to define connectivities for each of the components. We are sweeping the gate input voltage from 0 to 2.5 at an interval of 0.05. We need to find the output voltage, while we sweep the input voltage.Finally, we describe the model file.
 ![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/d28b341b-47a3-41a6-beaa-2e5098dc8ac8)
+- If we see the model file, it describes all the information regarding NMOS.
+![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/32a3df27-82b7-4cae-aea7-7ed533d1d62c)
+- Similarly, we can check the entire spice netlist in the text format
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/b746a70a-605b-4171-a240-b6af0e95c27c)
+- Now if we try to perform simulation using NGspice, by entering following commands to get dc transfer characteristics,
+![4](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/49e161f1-9ee4-4d99-bc85-5b592c8d8a05)
+- Once simulation is is perform, a new window will pop-up showing the waveform. Here, we have considered the width of both PMOS and NMOS are same.
+![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/82a37a53-c5ea-40d0-a527-d913bd31199a)
+- Now, considering differnt aspect ratios for NMOS and PMOS, where PMOS witdh is 2.5 times that of the NMOS, Now, swithing threshold will get shifted.
+![7](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/33524c90-aa73-4b25-b0bb-da5e2b5b8d50)
+
+
+
 
 ____________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-314"></a>
