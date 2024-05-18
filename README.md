@@ -452,8 +452,10 @@ ________________________________________________________________________________
 - Now if we try to perform simulation using NGspice, by entering following commands to get dc transfer characteristics,
 ![4](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/49e161f1-9ee4-4d99-bc85-5b592c8d8a05)
 - Once simulation is is perform, a new window will pop-up showing the waveform. Here, we have considered the width of both PMOS and NMOS are same.
+
 ![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/82a37a53-c5ea-40d0-a527-d913bd31199a)
 - Now, considering differnt aspect ratios for NMOS and PMOS, where PMOS witdh is 2.5 times that of the NMOS, Now, swithing threshold will get shifted.
+
 ![7](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/33524c90-aa73-4b25-b0bb-da5e2b5b8d50)
 
 
