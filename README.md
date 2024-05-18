@@ -464,7 +464,7 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-314"></a>
 #### SKY_L3 - Switching Threshold Vm
-- We can see, the comparitive results for both the aspect ratios of the CMOS inverteer.
+- We can see, the comparitive results for both the aspect ratios of the CMOS inverter.
 ![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/dea5ab89-2a00-46a0-a2ec-eecfd00e6426)
 - Switching Threshold is defined as the voltage when Vin = Vout. We can see Vm is different for two different aspect ratios.
 ![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a1eda108-0d76-4ee9-860a-044ae36f41f6)
@@ -473,6 +473,14 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-315"></a>
 #### SKY_L4 - Static and dynamic simulation of CMOS inverter
+- For, thoretical calculation, we can make equal both the currents and solve for Vm.
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/e3b5092f-9f6b-4f3f-90c5-0069db232299)
+- To calculate propagation delay, we need to do transient analysis, we have to define a pulse in the netlist description for spice simulation
+![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/1b3d2198-06ac-48b7-aaa9-bfd9642fd01c)
+- We need to plot both input and output and see 50% of output and input differnce for rise and fall delay.
+![Screenshot (75)](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/33c82997-e1a7-47c1-96cd-4edfcc9b058a)
+- NMOS and PMOS having the same aspect ratio, for that we have calculated the rise and fall delay.
+![last](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/24cf9cec-8def-4664-afb4-72fc37724a7e)
 ___________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-316"></a>
 ####SKY_L5 - Lab steps to git clone vsdstdcelldesign
