@@ -550,6 +550,8 @@ ________________________________________________________________________________
 ### SKY130_D3_SK3 - Sky130 Tech File Labs
 <a name="sub-subsection-331"></a>
 #### SKY_L1 - Lab steps to create final SPICE deck using Sky130 tech
+- Once extraction of the SPICE file is done, we have updated our spice netlist.
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ad4e6834-d0fc-4f0a-94c0-d4c7641f2359)
 
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-332"></a>
