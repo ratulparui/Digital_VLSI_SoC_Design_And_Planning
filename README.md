@@ -483,7 +483,15 @@ ________________________________________________________________________________
 ![last](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/24cf9cec-8def-4664-afb4-72fc37724a7e)
 ___________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-316"></a>
-####SKY_L5 - Lab steps to git clone vsdstdcelldesign
+#### SKY_L5 - Lab steps to git clone vsdstdcelldesign
+- First we have clone the following repository from Github
+
+        https://github.com/nickson-jose/vsdstdcelldesign
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/c7e0550a-c8a8-40a5-8db4-45f4e7710519)
+- After copying the technology file to vsdcelldesign directory, we can type the follwing command to invoke magic to see the layout of the inverter
+
+              magic -T sky130A.tech sky130_inv.mag &
+![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/4a29f896-d934-4aef-b593-364d2fdaceca)
 ___________________________________________________________________________________________________________________________________________________
 
 
