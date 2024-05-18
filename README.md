@@ -76,9 +76,15 @@ ____________________________________
     - [SKY_L7 - Lab exercise to implement poly resistor spacing to diff and tap](#sub-subsection-337)
     - [SKY_L8 - Lab challenge exercise to describe DRC error as geometrical construct](#sub-subsection-338)
     - [SKY_L9 - Lab challenge to find missing or incorrect rules and fix them](#sub-subsection-339)
-- [Section 4](#section-4)
-  - [Subsection 4.1](#subsection-41)
-    - [Sub-subsection 4.1.1](#sub-subsection-411)
+- [Sky130 Day 4 - Pre-layout timing analysis and importance of good clock tree](#section-4)
+  - [SKY130_D4_SK1 - Timing modelling using delay tables](#subsection-41)
+    - [SKY_L1 - Lab steps to convert grid info to track info](#sub-subsection-411)
+    - [SKY_L2 - Lab steps to convert magic layout to std cell LEF](#sub-subsection-412)
+    - [SKY_L3 - Introduction to timing libs and steps to include new cell in synthesis](#sub-subsection-413)
+    - [SKY_L4 - Introduction to delay tables](#sub-subsection-414)
+    - [SKY_L5 - Delay table usage Part 1](#sub-subsection-415)
+    - [SKY_L6 - Delay table usage Part 2](#sub-subsection-416)
+    - [SKY_L7 - Lab steps to configure synthesis settings to fix slack and include vsdinv](#sub-subsection-417)
   - [Subsection 4.2](#subsection-42)
     - [Sub-subsection 4.2.1](#sub-subsection-421)
   - [Subsection 4.3](#subsection-43)
@@ -494,7 +500,16 @@ ________________________________________________________________________________
 ### SKY130_D3_SK2 - Inception of Layout And CMOS fabrication process
 <a name="sub-subsection-321"></a>
 #### SKY_L1 - Create Active regions
+-  We have a p-type silicon substrate(100)
+  ![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/dd931a20-2806-4252-adf3-3e1f28f8f94a)
+-  First the isolation layer is created by depositing the Si02 layer (~40nm) on the substrate. Then  the Si3N4 layer (~80 nm) is deposited on the Sio2 layer. Then photoresist is coated on top of the nitrite layer, for further photolithography stage. Then mask is applied to create exposed and unexposed regions. During photolithography, UV rays are used to change the chemical properties of the exposed regions.
 
+![4](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/de07e496-906b-4963-903e-04e49ebbf7d9)
+
+- Then developer's solution removes exposed region. So that we have the following structure, after that we etch Silicon Nitrite layer foe exposed region and mask is removed.
+ ![6](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/21ea3a34-6b99-4527-84b7-2ba370f498c1)
+- After that we remove the photoresist chemically and Si3N4 layer behaves as a mask. Then we  place it in the oxidation furnace. After oxidation field oxide isa grown and the process is called LOCOS, after that nitrite layer is etched in phosphoric acid. This grown sio2 will provide the  isolation between two devices. This is how field oxide works as isolation between two devices.
+![12](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ebe3bf4e-1448-443f-8bba-e46f2948b1e8)
 ___________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-322"></a>
 #### SKY_L2 - Formation of N-well and P-well
