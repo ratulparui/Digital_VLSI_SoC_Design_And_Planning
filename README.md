@@ -531,10 +531,21 @@ SKY_L7 - Higher level metal formation
 ___________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-328"></a>
 #### SKY_L8 - Lab introduction to Sky130 basic layers layout and LEF using inverter
+- In magic we press ```s``` to select a highlighted area and in tkcon typing ```what``` gives information about that selected area
+
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/6b413cce-8665-4af8-bf94-6bf1c914bc55)
+
 ___________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-329"></a>
 #### SKY_L9 - Lab steps to create std cell layout and extract spice netlist
-___________________________________________________________________________________________________________________________________________________
+- To extract the spice netlist  file from the layout, we have to write the command in tkcon window
+
+              extract all
+              ext2spice cthresh 0 rthresh 0
+              ext2spice
+- After that we can see the message '''exttospice finished and * sky130_inv.spice * file is generated.
+![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/9f8cd17b-b242-46d6-b55d-3cec10c47f73)
+__________________________________________________________________________________________________________________
 <a name="subsection-33"></a>
 ### SKY130_D3_SK3 - Sky130 Tech File Labs
 <a name="sub-subsection-331"></a>
