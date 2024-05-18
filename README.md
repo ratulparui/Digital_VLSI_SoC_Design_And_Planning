@@ -464,8 +464,13 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-314"></a>
 #### SKY_L3 - Switching Threshold Vm
-- 
-___________________________________________________________________________________________________________________________________________________
+- We can see, the comparitive results for both the aspect ratios of the CMOS inverteer.
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/dea5ab89-2a00-46a0-a2ec-eecfd00e6426)
+- Switching Threshold is defined as the voltage when Vin = Vout. We can see Vm is different for two different aspect ratios.
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a1eda108-0d76-4ee9-860a-044ae36f41f6)
+- At switching Threshold Vm, Vgs = Vds. Both PMOS and NMOS remain at saturation at this point.
+![4](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/f38d139b-4072-498f-b143-81e7a479df2d)
+__________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-315"></a>
 #### SKY_L4 - Static and dynamic simulation of CMOS inverter
 ___________________________________________________________________________________________________________________________________________________
