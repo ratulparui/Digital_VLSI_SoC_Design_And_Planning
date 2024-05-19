@@ -513,6 +513,7 @@ ________________________________________________________________________________
 ___________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-322"></a>
 #### SKY_L2 - Formation of N-well and P-well
+- We have to form P-well and N-well once at a time. We have to protect one region while forming one of the region by photoresist. And then using mask 2 and UV light, we will do patterning of photoresist to form P-well.
 ___________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-323"></a>
 #### SKY_L3 - Formation of gate terminal
@@ -579,6 +580,17 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-335"></a>
 #### SKY_L5 - Lab introduction to Magic and steps to load Sky130 tech-rules
+- We use command to open magic
+
+         magic -d XR
+- We open met3.mag file from the file menu. Different layouts with different DRC values are shown, known as rule numbers.
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/62fe14a6-e651-4a9b-a73f-b953e611edca)
+
+- We can check [Skywater PDK](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html#m3) for more information.
+- Now, select an area in the tool and guide the pointer on to the metal 3 layer contact and middle click mouse. The selected region will be filled with metal 3.
+  After that typing ```cif see VIA2``` in tkcon, the metal 3 filled area will be filled with VIA2 mask.
+  ![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/e7ce66f1-c373-4cab-824b-a196fc52cedf)
+
 
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-336"></a>
