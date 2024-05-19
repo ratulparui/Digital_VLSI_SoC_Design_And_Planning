@@ -563,11 +563,19 @@ ________________________________________________________________________________
 - To know more about magic we can visit [magic](http://opencircuitdesign.com/magic/index.html).
 - We can see in DRC section under mannual.
 - To check Google/SkyWater DRC rules we can visit [SkyWater SKY130 PDK](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html).
-- 
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-334"></a>
 #### SKY_L4 - Lab introduction to Sky130 pdk's and steps to download labs
+- Sky130 Gihub repository [sky130 Github](https://github.com/google/skywater-pdk)
+- To download the lab files for performing DRC corrections we type in terminal from home
 
+       wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+       tar xfz drc_tests.tgz
+       ls -al
+       vi .magicrc
+  - To start  magic tool with better graphics, we type the command
+
+         magic -d XR &
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-335"></a>
 #### SKY_L5 - Lab introduction to Magic and steps to load Sky130 tech-rules
