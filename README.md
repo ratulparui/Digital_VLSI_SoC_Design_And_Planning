@@ -615,12 +615,39 @@ ________________________________________________________________________________
 ### SKY130_D4_SK1 - Timing modelling using delay tables
 <a name="sub-subsection-411"></a>
 #### SKY_L1 - Lab steps to convert grid info to track info
+- We need '.lef'  file of the invverter celk to place it into the picorv32a flow,
+- Now we can open the track file from ```pdk/sky130/libs.tech /openlane/sky130_fd_sc_hd/track.info``` .
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/7fce797e-6bb4-4133-b2b7-d2a717d0e37d)
+- Designing standard cells, we must consider
+    - The Input and output ports must lie on the intersection of the Vertical and Horizontal tracks.
+    - The width of the standard cell must be an odd multiple of the track pitch and height should be an odd multiple of track vertical pitch.
+ - Now, we open the tkcon window and give the  following command
 
+         help grid
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/e9c83f5c-203b-46ce-8daf-19e1d0059b48)
 
+- Then we type the follwing command in the tkcon window, according to the track file.
+
+         grid  0.46um 0.34um 0.23um 0.17um
+- Now both input and output ports are placed at the intersection of the tracks. Now, 3 boxes are covered between the boundaries.  
+![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/c6b1936d-25e6-4d50-962e-c65ede981d70)
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-412"></a>
 #### SKY_L2 - Lab steps to convert magic layout to std cell LEF
+- We need to define ports assign them as input, output and inout pins . We have followed [readme.md](https://github.com/nickson-jose/vsdstdcelldesign/blob/master/README.md)
+![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/b857d26d-96a8-4b16-9272-1b8c1bbc0883)
+- After that we save our design by giving the command
 
+      save sky130_vsdinv.mag
+  And open the layou using following command
+
+      magic -T sky130A.tech sky130_vsdinv.mag &
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/1f7f60d5-e099-48e2-adef-04bc98a7c246)
+- We extract the LEF file using following command
+
+      lef write
+- We can see that ```sky130_vsdinv.lef``` file has been created.
+![4](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/054db969-b8f7-470b-9c51-cd25241624de)
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-413"></a>
 #### SKY_L3 - Introduction to timing libs and steps to include new cell in synthesis
