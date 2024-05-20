@@ -659,7 +659,20 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-413"></a>
 #### SKY_L3 - Introduction to timing libs and steps to include new cell in synthesis
+- Now, we have to copy the ```.lef```  file ```sky130_vsdinv.lef``` to design source folder.
+- After that we have to copy three ```.lib``` files Typical, Fast and Slow to our design source folder.
+- Then we can edit the ```config.tcl``` file, so that  we have given path for ```.lib``` and ```.lef``` files.
+  ![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a09bc842-47c4-4e69-a7ba-01904295dfc1)
+- Now, we have to run ```docker``` and go though the previous design preparation steps. After that we have to give the following commands to read the ``` .lef``` file
 
+and then run synthesis.
+
+          set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+  
+          add_lefs -src $lefs
+          run_synthesis
+- Once Synthesis is done, it will show that   *Synthesis was sucessful* message.
+ ![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a3ea8a9e-cdf3-4cac-9a7b-248856f45eb4)
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-414"></a>
 #### SKY_L4 - Introduction to delay tables
