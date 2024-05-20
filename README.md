@@ -395,7 +395,15 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-225"></a>
 #### SKY_L5 - Congestion aware placement using RePlAce
+- In placement standard cells are placed. Placement The placement occurs in two stages. Global and detailed.
+- Global placement tries reducing the length of wires. And detailed Placement legalization of the Placement happens.
+- To do placement we give the command
 
+        run_placement
+- Once placement is done we can see, standard cells are placed in rows.
+![last1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/849f5a33-3c7a-4e69-9796-d8393c96b240)
+- Pressing ```z``` we zoom into the layout and see the standard cells placed
+![last2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ef67094e-56f6-4d3d-bbdc-76edf9ff57bd)
 __________________________________________________________________________________________________________________________________________________
 <a name="subsection-23"></a>
 ### SKY130_D2_SK3 - Cell design and characterization flows
