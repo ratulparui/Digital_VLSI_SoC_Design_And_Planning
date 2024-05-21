@@ -586,8 +586,22 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-332"></a>
 #### SKY_L2 - Lab steps to characterize inverter using sky130 model files
+- Once we run ```NgSpice``` by giving the following command, We can see the node volotages
 
-__________________________________________________________________________________________________________________________________________________
+      ngspice sky130_inv.spice
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/9babb60f-0090-4edd-ba6f-0daa011751b0)
+- We can see the transcient characteristics of the inverter.
+ ![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/3ce63058-88e9-4c77-8fd8-932ac748b125)
+- Now, max value of voltage is 3.5 V. 20% of 3.5 is 0.66 and 80% is 2.64
+- Rise transition time is the time taken by the output to rise from 20% to 80%.
+       Rise transition time = (2.18-2.12) ns = 0.06 ns
+- Fall transition time is time taken by output to fall from 80% to 20%
+       Fall transition time = 0.04 ns
+- Propagation delay is defined as the output crossing 50% to input crossing 50%
+       Propagation delay = 0.002 ns
+
+![4](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/eec5770f-ff77-428a-99f3-1f0c236f2f07)
+___________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-333"></a>
 #### SKY_L3 - Lab introduction to Magic tool options and DRC rules
 - To know more about magic we can visit [magic](http://opencircuitdesign.com/magic/index.html).
