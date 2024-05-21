@@ -1,4 +1,4 @@
-# Digital_VLSI_SoC_Design_And_Planning
+![image](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/c9b05946-cb62-41b5-8d36-4c3ea47981da) # Digital_VLSI_SoC_Design_And_Planning
 # Sponsored by VSD and NASSCOM 
 ____________________________________
 # Contents (Day 1 - Day 5)
@@ -742,8 +742,29 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-417"></a>
 #### SKY_L7 - Lab steps to configure synthesis settings to fix slack and include vsdinv
+- We perform synthesis again by modifying the ```config.tcl``` file to minimize negative slack.
+![config](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/e3d689b1-94ab-4db6-8034-257fdb9fe8c5)
+- Then we run the following commands
 
+  run_synthesis
+  run_floorplan
+- The command *run_floorplan* throws error, to rectify it we need to run_floorplan in steps
 
+      init_floorplan
+      place_io
+      tap_decap_or
+ ![6](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/d87376db-5bad-406d-b0aa-df8deff4281b)
+- Once floorplan is prformed, we can then go for placement, by running the following command
+
+        run_placement 
+- Once placement is finished, we can run magic tool to see the layout by runnung the following command
+
+      magic -T sky130A.tech lef read merged.lef def read picorv32a.placement.def &
+![placed_final](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/37dd5d1a-8e9a-4da2-a88c-a8883659dbc5)
+- Now, if we zoom in and look for ```sky130_vsdinv``` cell, we can see
+![placed2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/5f26946d-d7a2-41ee-bf28-d153078ed5f7)
+- After selecting the ```sky130_vsdinv``` cell and typing ```expand``` in the tkcon window, we can see the desired results
+![placed3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/02546765-3cf0-4c24-ad64-da47a3e00f89)
 __________________________________________________________________________________________________________________________________________________
 <a name="subsection-42"></a>
 ### SKY130_D4_SK1 - Timing modelling using delay tables
