@@ -1,4 +1,4 @@
-![image](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/4e88f683-247b-4abc-8b96-ee4c4463d818)# Digital_VLSI_SoC_Design_And_Planning
+# Digital_VLSI_SoC_Design_And_Planning
 # Sponsored by VSD and NASSCOM 
 ____________________________________
 # Contents (Day 1 - Day 5)
