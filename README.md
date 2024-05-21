@@ -1,4 +1,4 @@
-# Digital_VLSI_SoC_Design_And_Planning
+![image](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/4e88f683-247b-4abc-8b96-ee4c4463d818)# Digital_VLSI_SoC_Design_And_Planning
 # Sponsored by VSD and NASSCOM 
 ____________________________________
 # Contents (Day 1 - Day 5)
@@ -624,7 +624,24 @@ ________________________________________________________________________________
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-336"></a>
 #### SKY_L6 - Lab exercise to fix poly.9 error in Sky130 tech-file
+- First we load ```poly.mag``` file into magic tool
+![0](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/420b64f3-e7a4-4c39-ac38-a968784b1f5c)
+- We can know more about poly from [Sky130 PDK](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html)
+![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/0de33176-8ac3-44af-bafc-e059bb5f0a43)
+- To get the area of the selected area, we type in the tkcon window,
 
+       box
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ea8d2bc6-f4f4-4c0c-80fb-2edbf728cf0e)
+- We can check the following definition regarding poly-9
+![4](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/87015926-fc81-4e2c-bc29-a8b7fb929cb6)
+- Now we load the tech file by typing
+
+       tech load sky130A.tech
+![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/64c503d2-bdf2-466f-a432-5eb554784477)
+_ Now, we run command, to check if there any DRC errors present or not
+
+     drc check
+![6](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/175cf12a-84eb-41ba-8fec-d61b5e02b7b9)
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-337"></a>
 #### SKY_L7 - Lab exercise to implement poly resistor spacing to diff and tap
