@@ -644,12 +644,11 @@ ________________________________________________________________________________
 ### SKY130_D4_SK1 - Timing modelling using delay tables
 <a name="sub-subsection-411"></a>
 #### SKY_L1 - Lab steps to convert grid info to track info
-- We need '.lef'  file of the invverter celk to place it into the picorv32a flow,
+- We need '.lef'  file of the invverter cell to place it into the picorv32a flow,
 - Now we can open the track file from ```pdk/sky130/libs.tech /openlane/sky130_fd_sc_hd/track.info``` .
 ![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/7fce797e-6bb4-4133-b2b7-d2a717d0e37d)
 - Designing standard cells, we must consider
-    - The Input and output ports must lie on the intersection of the Vertical and Horizontal tracks.
-    - The width of the standard cell must be an odd multiple of the track pitch and height should be an odd multiple of track vertical pitch.
+    - The Input and output ports must lie on the intersection of the  Horizontal, vertical tracks.
  - Now, we open the tkcon window and give the  following command
 
          help grid
@@ -658,7 +657,7 @@ ________________________________________________________________________________
 - Then we type the follwing command in the tkcon window, according to the track file.
 
          grid  0.46um 0.34um 0.23um 0.17um
-- Now both input and output ports are placed at the intersection of the tracks. Now, 3 boxes are covered between the boundaries.  
+- Now both input and output ports are placed at the intersection of the tracks.  
 ![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/c6b1936d-25e6-4d50-962e-c65ede981d70)
 __________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-412"></a>
@@ -715,10 +714,124 @@ ________________________________________________________________________________
 
 
 __________________________________________________________________________________________________________________________________________________
+<a name="subsection-42"></a>
+### SKY130_D4_SK1 - Timing modelling using delay tables
+<a name="sub-subsection-421"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
 
 
-      
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-422"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-423"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-424"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-425"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="subsection-43"></a>
+### SKY130_D4_SK1 - Timing modelling using delay tables
+<a name="sub-subsection-431"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-432"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-433"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-434"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="subsection-44"></a>
+### SKY130_D4_SK1 - Timing modelling using delay tables
+<a name="sub-subsection-441"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-442"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-443"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-444"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-445"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+
+
+_________________________________________________________________________________________________________________________________________________
+<a name="section-5"></a>
+## Sky130 Day 5 - Pre-layout timing analysis and importance of good clock tree
+<a name="subsection-51"></a>
+### SKY130_D4_SK1 - Timing modelling using delay tables
+<a name="sub-subsection-511"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
     
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-512"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+    
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-513"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+    
+_________________________________________________________________________________________________________________________________________________
+<a name="subsection-52"></a>
+### SKY130_D4_SK1 - Timing modelling using delay tables
+<a name="sub-subsection-521"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-522"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-523"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+_________________________________________________________________________________________________________________________________________________
+<a name="subsection-53"></a>
+### SKY130_D4_SK1 - Timing modelling using delay tables
+<a name="sub-subsection-531"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+_________________________________________________________________________________________________________________________________________________
+<a name="sub-subsection-532"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+_________________________________________________________________________________________________________________________________________________
+
+<a name="sub-subsection-533"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+_________________________________________________________________________________________________________________________________________________
+
+<a name="sub-subsection-534"></a>
+#### SKY_L1 - Lab steps to convert grid info to track info
+_________________________________________________________________________________________________________________________________________________
 
 
-  
