@@ -780,20 +780,35 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-423"></a>
 #### SKY_L3 - Lab steps to configure OpenSTA for post-synth timing analysis
-- To run STA, first we create a pre_sta.conf file of the following specifications
+- To run STA, first we create a ```pre_sta.conf``` file of the following specifications
 ![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/d9220898-6c3c-4c1b-a549-52012537a6ff)
 - Then we go to repository [extras](https://github.com/nickson-jose/vsdstdcelldesign/tree/master/extras) to get the ```my_base.sdc``` file and do the following changes
 ![4](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/b1f2a82a-d7ab-49ed-9b0d-e0e97fa9cc96)
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-424"></a>
 #### SKY_L4 - Lab steps to optimize synthesis to reduce setup violations
+- To reduce negative slack, we re-run synthesis, by giving the following command
 
+        set  ::env(SYNTH_MAX_FANOUT) 4
+![use](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/d6c54fbb-2a36-4cd9-ac6d-d525359fea08)
+- To perform STA, we go to the OpenLANE directory and run the following command
 
+           sta pre_sta.conf
+![before](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/752e6d62-3ec2-45e4-8a73-825c7fe64ccf)
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-425"></a>
 #### SKY_L5 - Lab steps to do basic timing ECO
+- To minimize negative slack further, we try to replace the buffers with smaller drive strengths by buffers with larger drive strengths.
+- We had slack
+![before](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/11a13b4a-988d-429e-95f2-8693ab332b2b)
+- To replace the buffers, we run the following commands
 
-
+      report_net -connections _12536_
+      replace_cell _12536_ sky130_fd_sc_hd__buf_8
+      report_checks -fields {net cap slew input_pins} -digits 4
+- After replacement of the buffer we have reduced the negative slack
+![after](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ce6b5db2-28bf-4da2-978d-1ff11f1b0d9d)
+- We perform this steps multiple times so that the negative slack is reduced.
 _________________________________________________________________________________________________________________________________________________
 <a name="subsection-43"></a>
 ### SKY130_D4_SK3 - Clock tree synthesis TritonCTS and signal integrity
