@@ -780,8 +780,10 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-423"></a>
 #### SKY_L3 - Lab steps to configure OpenSTA for post-synth timing analysis
-
-
+- To run STA, first we create a pre_sta.conf file of the following specifications
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/d9220898-6c3c-4c1b-a549-52012537a6ff)
+- Then we go to repository [extras](https://github.com/nickson-jose/vsdstdcelldesign/tree/master/extras) to get the ```my_base.sdc``` file and do the following changes
+![4](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/b1f2a82a-d7ab-49ed-9b0d-e0e97fa9cc96)
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-424"></a>
 #### SKY_L4 - Lab steps to optimize synthesis to reduce setup violations
