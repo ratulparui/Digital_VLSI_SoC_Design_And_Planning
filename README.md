@@ -809,7 +809,7 @@ ________________________________________________________________________________
 - After replacement of the buffer we have reduced the negative slack
 ![after](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ce6b5db2-28bf-4da2-978d-1ff11f1b0d9d)
 - We perform this steps multiple times so that the negative slack is reduced.
--  If we go to [extras] (https://github.com/nickson-jose/vsdstdcelldesign/tree/master/extras) and take the picorv32a.synthesis.v file and again perform STA, we can see the slack has reduced significantly
+-  If we go to [extras] (https://github.com/nickson-jose/vsdstdcelldesign/tree/master/extras) and take the ```picorv32a.synthesis.v``` file and again perform STA, we can see the slack has reduced significantly
 - ![result](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/d96278cf-3bf9-47f4-a1bb-b13ad352a838)
 _________________________________________________________________________________________________________________________________________________
 <a name="subsection-43"></a>
@@ -841,7 +841,7 @@ ________________________________________________________________________________
 #### SKY_L4 - Lab steps to verify CTS runs
 - If we go to scripts directory under openlane directory, we can see that there are different script files existing for different steps
 ![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a095a1b1-88e6-407c-a6e7-9f31fcaa9add)
-
+- After sucessful ```cts``` run, we can see that our ```DEF``` file is updated
 ![cts](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/c9f3133c-13b9-4094-b825-6754e995784c)
 ______________________________________________________________________________________________________________________________
 <a name="subsection-44"></a>
@@ -858,6 +858,14 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-443"></a>
 #### SKY_L3 - Lab steps to analyze timing with real clocks using OpenSTA
+- To run STA with real clocks with ```OpenSTA```, we invoke ```OpenROAD``` inside ```OpenLANE``` and load the ```.lef``` and ```.def``` files to create ```pico_cts.db``` file.
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/b83f9bc3-3269-4ea1-8b4e-5b1337fefb02)
+- Now, we read the ```pico_cts.db``` file, ```picorv32a.synthesis.v``` file, and differnt library files, ```my_base.sdc``` file and again perform STA
+![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/84ee3343-c2b3-4183-9b67-d472b183bbf0)
+- We can see the slack reult
+![6](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/276847d7-d898-4652-bff6-3535fca868df)
+- Here, we can check that HOLD time violation has occured. We need to fix that in routing stage
+![7hold viol](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ac679f6b-68f7-4fe0-a35c-5868c5c2a0aa)
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-444"></a>
