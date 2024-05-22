@@ -872,12 +872,12 @@ ________________________________________________________________________________
 #### SKY_L4 - Lab steps to execute OpenSTA with right timing libraries and CTS assignment
  - Now, we have performed synthesis using typical library, so we need to again perform the previous step by reading the typical library.
 ![1](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/04d0a017-46f8-4cf9-8cdc-edf28ae0f90e)
-- Again we perform ```CTS```.
+- We have closed OpenLANE and relaunched it, again we perform ```CTS```.
 ![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/b497f68f-78c6-4acb-89cc-34b5c808e7b5)
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-445"></a>
 #### SKY_L5 - Lab steps to observe impact of bigger CTS buffers on setup and hold timing
-
+- We have seen the CTS results for buffers of size 8, now if we want we can revert back and add the buffers of size 1 and again re-run ```cts```.
 
 _________________________________________________________________________________________________________________________________________________
 <a name="section-5"></a>
