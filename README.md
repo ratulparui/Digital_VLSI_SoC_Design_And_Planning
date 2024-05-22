@@ -767,78 +767,78 @@ ________________________________________________________________________________
 ![placed3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/02546765-3cf0-4c24-ad64-da47a3e00f89)
 __________________________________________________________________________________________________________________________________________________
 <a name="subsection-42"></a>
-### SKY130_D4_SK1 - Timing modelling using delay tables
+### SKY130_D4_SK2 - Timing analysis with ideal clocks using openSTA
 <a name="sub-subsection-421"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L1 - Setup timing analysis and introduction to flip-flop setup time
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-422"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L2 - Introduction to clock jitter and uncertainty
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-423"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L3 - Lab steps to configure OpenSTA for post-synth timing analysis
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-424"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L4 - Lab steps to optimize synthesis to reduce setup violations
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-425"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L5 - Lab steps to do basic timing ECO
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="subsection-43"></a>
-### SKY130_D4_SK1 - Timing modelling using delay tables
+### SKY130_D4_SK3 - Clock tree synthesis TritonCTS and signal integrity
 <a name="sub-subsection-431"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L1 - Clock tree routing and buffering using H-Tree algorithm
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-432"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L2 - Crosstalk and clock net shielding
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-433"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L3 - Lab steps to run CTS using TritonCTS
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-434"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L4 - Lab steps to verify CTS runs
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="subsection-44"></a>
-### SKY130_D4_SK1 - Timing modelling using delay tables
+### SKY130_D4_SK4 - Timing analysis with real clocks using openSTA
 <a name="sub-subsection-441"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L1 - Setup timing analysis using real clocks
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-442"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L2 - Hold timing analysis using real clocks
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-443"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L3 - Lab steps to analyze timing with real clocks using OpenSTA
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-444"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L4 - Lab steps to execute OpenSTA with right timing libraries and CTS assignment
 
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-445"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L5 - Lab steps to observe impact of bigger CTS buffers on setup and hold timing
 
 
 _________________________________________________________________________________________________________________________________________________
