@@ -804,11 +804,13 @@ ________________________________________________________________________________
 - To replace the buffers, we run the following commands
 
       report_net -connections _12536_
-      replace_cell _12536_ sky130_fd_sc_hd__buf_8
+      replace_cell _13528_ sky130_fd_sc_hd__buf_8
       report_checks -fields {net cap slew input_pins} -digits 4
 - After replacement of the buffer we have reduced the negative slack
 ![after](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ce6b5db2-28bf-4da2-978d-1ff11f1b0d9d)
 - We perform this steps multiple times so that the negative slack is reduced.
+-  If we go to [extras] (https://github.com/nickson-jose/vsdstdcelldesign/tree/master/extras) and take the picorv32a.synthesis.v file and again perform STA, we can see the slack has reduced significantly
+- ![result](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/d96278cf-3bf9-47f4-a1bb-b13ad352a838)
 _________________________________________________________________________________________________________________________________________________
 <a name="subsection-43"></a>
 ### SKY130_D4_SK3 - Clock tree synthesis TritonCTS and signal integrity
@@ -824,14 +826,24 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-433"></a>
 #### SKY_L3 - Lab steps to run CTS using TritonCTS
+- We again run STA and try minimizing the negative slack.
+- We run cts by giving the following command
 
+      run_cts
+- Once cts is performed we run the following commands
+
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/5bb355e7-b682-46c8-89fa-1cab511dde42)
+- Then we again run STA inside the OpenLANE itself and give the following commands
+![5](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/1174f4b7-f47d-4d81-bbcb-71f615cdcb6b)
 
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-434"></a>
 #### SKY_L4 - Lab steps to verify CTS runs
+- If we go to scripts directory under openlane directory, we can see that there are different script files existing for different steps
+![2](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/a095a1b1-88e6-407c-a6e7-9f31fcaa9add)
 
-
-_________________________________________________________________________________________________________________________________________________
+![cts](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/c9f3133c-13b9-4094-b825-6754e995784c)
+______________________________________________________________________________________________________________________________
 <a name="subsection-44"></a>
 ### SKY130_D4_SK4 - Timing analysis with real clocks using openSTA
 <a name="sub-subsection-441"></a>
@@ -847,10 +859,10 @@ ________________________________________________________________________________
 <a name="sub-subsection-443"></a>
 #### SKY_L3 - Lab steps to analyze timing with real clocks using OpenSTA
 
-
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-444"></a>
 #### SKY_L4 - Lab steps to execute OpenSTA with right timing libraries and CTS assignment
+ 
 
 
 _________________________________________________________________________________________________________________________________________________
