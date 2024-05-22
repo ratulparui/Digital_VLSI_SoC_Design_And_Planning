@@ -881,47 +881,47 @@ ________________________________________________________________________________
 
 _________________________________________________________________________________________________________________________________________________
 <a name="section-5"></a>
-## Sky130 Day 5 - Pre-layout timing analysis and importance of good clock tree
+## Sky130 Day 5 - Final steps for RTL2GDS using tritonRoute and openSTA
 <a name="subsection-51"></a>
-### SKY130_D4_SK1 - Timing modelling using delay tables
+### SKY130_D5_SK1 - Routing and design rule check (DRC)
 <a name="sub-subsection-511"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L1 - Introduction to Maze Routing - Lee's algorithm
     
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-512"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L2 - Lee's Algorithm conclusion
     
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-513"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L3 - Design Rule Check
     
 _________________________________________________________________________________________________________________________________________________
 <a name="subsection-52"></a>
-### SKY130_D4_SK1 - Timing modelling using delay tables
+### SKY130_D5_SK2 - Power Distribution Network and routing
 <a name="sub-subsection-521"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L1 - Lab steps to build power distribution network
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-522"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L2 - Lab steps from power straps to std cell power
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-523"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L3 - Basics of global and detail routing and configure TritonRoute
 _________________________________________________________________________________________________________________________________________________
 <a name="subsection-53"></a>
-### SKY130_D4_SK1 - Timing modelling using delay tables
+### SKY130_D5_SK3 - TritonRoute Features
 <a name="sub-subsection-531"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L1 - TritonRoute feature 1 - Honors pre-processed route guides
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-532"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L2 - TritonRoute Feature2 & 3 - Inter-guide connectivity and intra- & inter-layer routing
 _________________________________________________________________________________________________________________________________________________
 
 <a name="sub-subsection-533"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L3 - TritonRoute method to handle connectivity
 _________________________________________________________________________________________________________________________________________________
 
 <a name="sub-subsection-534"></a>
-#### SKY_L1 - Lab steps to convert grid info to track info
+#### SKY_L4 - Routing topology algorithm and final files list post-route
 _________________________________________________________________________________________________________________________________________________
 
 
