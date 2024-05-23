@@ -790,7 +790,7 @@ ________________________________________________________________________________
 - To reduce negative slack, we re-run synthesis, by giving the following command
 
         set  ::env(SYNTH_MAX_FANOUT) 4
-![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/2755bf50-a0e6-4d36-9352-94ec45acf918)
+![config](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/24483343-5e5d-4e77-a94d-55ad8a846d0e)
 - To perform STA, we go to the OpenLANE directory and run the following command
 
            sta pre_sta.conf
@@ -827,6 +827,9 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-433"></a>
 #### SKY_L3 - Lab steps to run CTS using TritonCTS
+- Now, we have to replace exisiting gate-level-netlist existing in the ```results/synthesis``` directory. By giving the following command in OpenSTA
+
+      write_verilog /home/vsduser/desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/21-05_07-43/results/synthesis/picorv32a.synthesis.v
 - We again run STA and try minimizing the negative slack.
 - We run cts by giving the following command
 
