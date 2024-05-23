@@ -816,6 +816,7 @@ ________________________________________________________________________________
 - After replacement of the buffer we have reduced the negative slack
 ![after](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ce6b5db2-28bf-4da2-978d-1ff11f1b0d9d)
 - We perform this steps multiple times so that the negative slack is reduced.
+![last](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/b450c567-d0e5-4a45-abe6-bc909bd4c7c2)
 -  We have to perform this step iteratively, we can see the slack has met
 ![finally](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/1cc451db-0cee-4c30-aa3d-c56c725df7e2)
 
