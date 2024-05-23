@@ -746,8 +746,8 @@ ________________________________________________________________________________
 ![config](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/e3d689b1-94ab-4db6-8034-257fdb9fe8c5)
 - Then we run the following commands
 
-  run_synthesis
-  run_floorplan
+      run_synthesis
+      run_floorplan
 - The command *run_floorplan* throws error, to rectify it we need to run_floorplan in steps
 
       init_floorplan
@@ -787,20 +787,27 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-424"></a>
 #### SKY_L4 - Lab steps to optimize synthesis to reduce setup violations
-- To reduce negative slack, we re-run synthesis, by giving the following command
+- We re-run synthesis, by giving the following command
 
-        set  ::env(SYNTH_MAX_FANOUT) 4
+      prep -design picorv32a -tag 21-05_07-43 -overwrite
+      set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+      add_lefs -src $lefs
+      set ::env(SYNTH_SIZING) 1
+      set ::env(SYNTH_STRATEGY) "DELAY 3"
+      set  ::env(SYNTH_MAX_FANOUT) 4
+      run_synthesis
 ![config](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/24483343-5e5d-4e77-a94d-55ad8a846d0e)
 - To perform STA, we go to the OpenLANE directory and run the following command
 
-           sta pre_sta.conf
-![before](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/752e6d62-3ec2-45e4-8a73-825c7fe64ccf)
+      sta pre_sta.conf
+![sta_conf](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/add66d5f-d142-427a-bc20-baa4a75d8983)
+- We can see that slac has reduced from previous case.
 _________________________________________________________________________________________________________________________________________________
 <a name="sub-subsection-425"></a>
 #### SKY_L5 - Lab steps to do basic timing ECO
 - To minimize negative slack further, we try to replace the buffers with smaller drive strengths by buffers with larger drive strengths.
-- We had slack
-![before](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/11a13b4a-988d-429e-95f2-8693ab332b2b)
+- We have current slack -6.40 (VIOLATED)
+![sta_conf](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/c181f51c-bafe-44a2-87c8-c9f1e6c257bd)
 - To replace the buffers, we run the following commands
 
       report_net -connections _12536_
@@ -830,7 +837,9 @@ ________________________________________________________________________________
 - Now, we have to replace exisiting gate-level-netlist existing in the ```results/synthesis``` directory. By giving the following command in OpenSTA
 
       write_verilog /home/vsduser/desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/21-05_07-43/results/synthesis/picorv32a.synthesis.v
-- We again run STA and try minimizing the negative slack.
+- We again run floorplan and placement by giving the following commands
+
+  
 - We run cts by giving the following command
 
       run_cts
