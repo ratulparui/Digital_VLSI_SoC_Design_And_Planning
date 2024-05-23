@@ -790,7 +790,7 @@ ________________________________________________________________________________
 - To reduce negative slack, we re-run synthesis, by giving the following command
 
         set  ::env(SYNTH_MAX_FANOUT) 4
-![use](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/d6c54fbb-2a36-4cd9-ac6d-d525359fea08)
+![3](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/2755bf50-a0e6-4d36-9352-94ec45acf918)
 - To perform STA, we go to the OpenLANE directory and run the following command
 
            sta pre_sta.conf
@@ -809,7 +809,7 @@ ________________________________________________________________________________
 - After replacement of the buffer we have reduced the negative slack
 ![after](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ce6b5db2-28bf-4da2-978d-1ff11f1b0d9d)
 - We perform this steps multiple times so that the negative slack is reduced.
--  If we go to [extras](https://github.com/nickson-jose/vsdstdcelldesign/tree/master/extras) and take the ```picorv32a.synthesis.v``` file and again perform STA, we can see the slack has met
+-  We have to perform this step iteratively, we can see the slack has met
 ![finally](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/1cc451db-0cee-4c30-aa3d-c56c725df7e2)
 
 _________________________________________________________________________________________________________________________________________________
