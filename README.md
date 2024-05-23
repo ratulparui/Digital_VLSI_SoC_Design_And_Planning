@@ -809,8 +809,9 @@ ________________________________________________________________________________
 - After replacement of the buffer we have reduced the negative slack
 ![after](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/ce6b5db2-28bf-4da2-978d-1ff11f1b0d9d)
 - We perform this steps multiple times so that the negative slack is reduced.
--  If we go to [extras](https://github.com/nickson-jose/vsdstdcelldesign/tree/master/extras) and take the ```picorv32a.synthesis.v``` file and again perform STA, we can see the slack has reduced significantly
-- ![result](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/d96278cf-3bf9-47f4-a1bb-b13ad352a838)
+-  If we go to [extras](https://github.com/nickson-jose/vsdstdcelldesign/tree/master/extras) and take the ```picorv32a.synthesis.v``` file and again perform STA, we can see the slack has met
+![finally](https://github.com/ratulparui/Digital_VLSI_SoC_Design_And_Planning/assets/154420885/1cc451db-0cee-4c30-aa3d-c56c725df7e2)
+
 _________________________________________________________________________________________________________________________________________________
 <a name="subsection-43"></a>
 ### SKY130_D4_SK3 - Clock tree synthesis TritonCTS and signal integrity
